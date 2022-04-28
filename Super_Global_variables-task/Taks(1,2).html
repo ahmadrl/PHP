@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Enter your email and password for show calculator</div><br/> <br/>
+    <form action="" method="post" >
+        <label for="">Email</label> <input type="email" name="email"> <br/> <br/>
+        <label for="">Password</label> <input type="password" name="pass"> <br/> <br/>
+        <input id="on" type="submit">
+    </form>
+
+    <hr>
+    <div id="div1" style="display: none;"><h2>Calculator</h2></div><br/> <br/>
+    <form style="display: none;" id="form2" method="get" action="Task.php">
+        <label for="">Enter first number</label>
+        <br/> <br/> 
+        <input type="text" name="num1">
+         <br/> <br/>
+        <label for="">Enter second number</label><br/> <br/> <input type="text" name="num2"> <br/> <br/>
+        <input type="submit" value="+" name="cal">  <input type="submit" value="-" name="cal">  <input type="submit" value="*" name="cal">  <input type="submit" value="/" name="cal">
+    </form>
+</body>
+<script>
+document.getElementById('on').addEventListener('click',function()
+{
+    document.getElementById('form2').style.display='block';
+    document.getElementById('div1').style.display='block';
+} );
+
+</script>
+</html>
+
