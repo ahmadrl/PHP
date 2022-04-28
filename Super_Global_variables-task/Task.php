@@ -13,7 +13,8 @@ if($_SESSION['ops']=='*')
 $result= $_SESSION['n1']*$_SESSION['n2'];
 if($_SESSION['ops']=='/')
 $result= $_SESSION['n1']/$_SESSION['n2'];
-
+$em = $_POST["email"];
+echo "Your email is : $em".'<br>';
 echo 'result is'.' '.$result;
 
 ?>
